@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Projeto awari localiza",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
     "dev": "nodemon ./app.js localhost 3000"
   },

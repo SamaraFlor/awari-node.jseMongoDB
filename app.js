@@ -21,31 +21,31 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 // definindo nossas rotas
-// var promocaoRoute = require('./routes/promocaoRoute');
-// app.use('/', promocaoRoute);
+var promocaoRoute = require('./routes/promocaoRoute');
+app.use('/', promocaoRoute);
 
-// var clienteRoute = require('./routes/clienteRoute');
-// app.use('/', clienteRoute);
+var clienteRoute = require('./routes/clienteRoute');
+app.use('/', clienteRoute);
 
-// var funcionarioRoute = require('./routes/funcionarioRoute');
-// app.use('/', funcionarioRoute);
+var funcionarioRoute = require('./routes/funcionarioRoute');
+app.use('/', funcionarioRoute);
 
-// var carroRouter = require('./routes/carroRouter');
-// app.use('/', carroRouter);
+var carroRoute = require('./routes/carroRoute');
+app.use('/', carroRoute);
 
-// var esportivoRouter = require('./routes/esportivoRouter');
-// app.use('/', esportivoRouter);
+var esportivoRoute = require('./routes/esportivoRoute');
+app.use('/', esportivoRoute);
 
-// var utilitarioRouter = require('./routes/utilitarioRouter');
-// app.use('/', utilitarioRouter);
+var utilitarioRoute = require('./routes/utilitarioRoute');
+app.use('/', utilitarioRoute);
 
-// var reservaRoute = require('./routes/reservaRoute');
-// app.use('/', reservaRoute);
+var reservaRoute = require('./routes/reservaRoute');
+app.use('/', reservaRoute);
 
 // definindo nossa porta e host
 const PORT = 3000;
 const HOST = '0.0.0.0';
 
 app.listen(PORT, HOST, () => {
-  console.log(`Servidor executando na porta`);
+  console.log(`Servidor executando na porta ${PORT}.`);
 });
